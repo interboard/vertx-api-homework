@@ -23,7 +23,7 @@ public class homework  {
                 HttpServer httpServer = vertx.createHttpServer();
 
                 Router router = Router.router(vertx);
-
+                //http://127.0.0.1:8091/api/使用者帳號
                 router.route(HttpMethod.POST, "/api/:username").handler(routingContext -> {
                    routingContext.response().putHeader("Content-Type", "application/json;charset=UTF-8");
                     String username = routingContext.request().getParam("username");
