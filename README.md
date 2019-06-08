@@ -37,8 +37,8 @@ dependencies {
 db用
 
 CREATE TABLE `member` (
-  `userId` int(11) NOT NULL AUTO_INCREMENT,
-  `username` char(20) NOT NULL DEFAULT '' ,
+  `userId` int(99) NOT NULL AUTO_INCREMENT,
+  `username` char(300) NOT NULL DEFAULT '' ,
   PRIMARY KEY (`userId`)
 ) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 
